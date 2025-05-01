@@ -44,11 +44,11 @@ fi
 
 # 7. AppImages
 echo "[+] Searching for AppImage files..."
-find ~ /opt -type f -iname "*.AppImage" > "$output_dir/appimages.txt"
+sudo find ~ /opt -type f -iname "*.AppImage" > "$output_dir/appimages.txt"
 
 # 8. Custom executables
 echo "[+] Scanning for custom executables..."
-find /usr/local/bin /usr/bin /opt ~/bin -type f -executable > "$output_dir/custom_executables.txt"
+sudo find /usr/local/bin /usr/bin /opt ~/bin -type f -executable > "$output_dir/custom_executables.txt"
 
 # 9. Desktop launcher entries
 echo "[+] Extracting desktop launcher commands..."
@@ -56,7 +56,7 @@ grep -h '^Exec=' /usr/share/applications/*.desktop ~/.local/share/applications/*
 
 # 10. Git repositories
 echo "[+] Listing Git repositories..."
-find ~ /opt -type d -name ".git" > "$output_dir/git_repos.txt"
+sudo find ~ /opt -type d -name ".git" > "$output_dir/git_repos.txt"
 
 # 11. User scripts
 echo "[+] Checking for user scripts in ~/bin..."
