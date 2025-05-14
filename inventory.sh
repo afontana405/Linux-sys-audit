@@ -66,4 +66,8 @@ find ~/bin -type f -executable > "$output_dir/user_scripts.txt"
 echo "[+] Listing active systemd services..."
 systemctl list-units --type=service --state=running > "$output_dir/active_services.txt"
 
+# 13. Network sockets and processes
+echo "[+] Capturing network sockets..."
+ss -tuanp > "$output_dir/network_sockets.txt"
+
 echo "? Inventory complete. Output saved to: $output_dir"
