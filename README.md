@@ -14,7 +14,7 @@ After cloning this repository on a Linux machine:
 2. **Make the script executable**:  
    `chmod +x inventory.sh`
 
-3. **Run the script**
+3. **Run the script**:
    `./inventory.sh`
 
 5. **View the results**:  
