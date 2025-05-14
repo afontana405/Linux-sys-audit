@@ -17,7 +17,7 @@ After cloning this repository on a Linux machine:
 3. **Run the script**
    `./inventory.sh`
 
-4. **View the results**:  
+5. **View the results**:  
    The output of the system audit will be saved in a directory named `~/software_inventory`.
 
 > 💡 **Note:** If you encounter a "Permission denied" error when trying to run the script, it’s because the file is not executable yet, step 2 fixes that.
