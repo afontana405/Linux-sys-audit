@@ -14,8 +14,15 @@ After cloning this repository on a Linux machine:
 2. **Make the script executable**:  
    `chmod +x inventory.sh`
 
-3. **Run the script**:  
-   `./inventory.sh`
+3. **Run the script** using one of the following methods:
+
+   ### Option A – Run Normally (if your system allows scripts):  
+   `.\inventory.ps1`
+
+   ### Option B – If You See a "Running scripts is disabled" Error:  
+   Bypass the execution policy for this session:  
+   `powershell -ExecutionPolicy Bypass -File .\inventory.ps1`
+
 
 4. **View the results**:  
    The output of the system audit will be saved in a directory named `~/software_inventory`.
